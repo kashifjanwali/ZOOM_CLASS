@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in HTML</title>
+  </head>
+  <body>
+    <form>
+      <!-- input type text -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" required placeholder="Kashif Hussain" />
+      <br />
+      <br />
+      <!-- input type email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="abcd123@gmail.com" />
+      <br />
+      <br />
+      <!-- input type password -->
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <br />
+      <br />
+      <!-- input type date -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" />
+
+      <!-- input type radio -->
+      <p>Gender</p>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+
+      <!-- <br> is used to break line -->
+      <br />
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+
+      <br />
+      <input type="radio" id="other" name="gender" />
+      <label for="other">Other</label>
+
+      <br />
+      <br />
+      <select name="country">
+        <option value="select">Select you Country</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="india">India</option>
+        <option value="afganistan">Afghanistan</option>
+        <option value="canada">Canada</option>
+        <option value="usa">America</option>
+      </select>
+
+      <!-- input type checkbox -->
+      <p>Checout your favorite languages:</p>
+      <input type="checkbox" id="js" />
+      <label for="js">JavaScript</label>
+      <br />
+      <input type="checkbox" id="cpp" />
+      <label for="cpp">C++</label>
+      <br />
+      <input type="checkbox" id="py" />
+      <label for="py">Python</label>
+      <br />
+      <input type="checkbox" id="php" />
+      <label for="php">PHP</label>
+
+      <!-- Text area -->
+      <p>Address</p>
+      <textarea
+        name="address"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Village Masher Tehsil Yasin Dist Ghizer"
+      ></textarea>
+
+      <br />
+      <!-- input type submit -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
