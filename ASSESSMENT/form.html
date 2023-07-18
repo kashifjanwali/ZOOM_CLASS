@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student's Registration Form</title>
+  </head>
+  <body>
+    <!-- Registration Form -->
+    <form>
+      <!-- Personal Information Section -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <!-- Input type name -->
+        <label for="name"
+          >Name
+          <input
+            type="text"
+            id="name"
+            name="name"
+            maxlength="30"
+            minlength="3"
+            placeholder="Full Name"
+            required
+          />
+        </label>
+        <br /><br />
+
+        <!-- Input type eamil -->
+        <label for="email"
+          >Email
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example321@gmail.com"
+            required
+          />
+        </label>
+        <br /><br />
+
+        <!-- Input type number -->
+        <label for="phone"
+          >Phone Number
+          <input
+            type="tel"
+            placeholder="+92 341 1234567"
+            minlength="13"
+            maxlength="14"
+            required
+          />
+        </label>
+        <br /><br />
+
+        <!-- Input type password -->
+        <label for="password">
+          Password
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            maxlength="14"
+            placeholder="********"
+            required
+          />
+        </label>
+        <br /><br />
+
+        <!-- Input type date -->
+        <label for="dob"
+          >Date Of Birth
+          <input type="date" name="date-of-birth" id="dob" required />
+        </label>
+        <br /><br />
+
+        <!-- Select an Option -->
+        <input
+          type="select"
+          name="country"
+          list="countries"
+          placeholder="Country"
+        />
+        <datalist id="countries">
+          <option value="Afghanistan"></option>
+          <option value="Pakistan"></option>
+          <option value="India"></option>
+          <option value="Srilanka"></option>
+        </datalist>
+        <br /><br />
+
+        <!-- Text area -->
+        <label for="intro"
+          >Who am I? (50 words) <br />
+          <textarea
+            name=""
+            id="intro"
+            cols="25"
+            rows="4"
+            placeholder="I'm a Frontend React Developer ...."
+          ></textarea>
+        </label>
+        <br /><br />
+
+        <!--  -->
+      </fieldset>
+
+      <!-- Education Section -->
+      <fieldset>
+        <legend>Education</legend>
+
+        <!-- Input Type radio -->
+        <p>1. Choose your Last Qualification</p>
+        <label for="master">
+          <input type="radio" id="master" name="last-qualification" />Masters
+        </label>
+        <br />
+        <label for="bachelors">
+          <input
+            type="radio"
+            id="bachelors"
+            name="last-qualification"
+          />Bachelors
+        </label>
+        <br />
+        <label for="inter">
+          <input type="radio" id="inter" name="last-qualification" />Inter
+        </label>
+        <br />
+        <label for="matric">
+          <input type="radio" id="matric" name="last-qualification" />Matric
+        </label>
+        <br />
+
+        <p>2. Marks in Compuer Sciences (Inter)</p>
+        <label for="ininghty">
+          <input
+            type="radio"
+            id="ininghty"
+            name="percentage-in-Computer-inter"
+          />90% or Above
+        </label>
+        <br />
+        <label for="ieighty">
+          <input
+            type="radio"
+            id="ieighty"
+            name="percentage-in-Computer-inter"
+          />80% - 90%
+        </label>
+        <br />
+        <label for="iseventy">
+          <input
+            type="radio"
+            id="iseventy"
+            name="percentage-in-Computer-inter"
+          />70% - 80%
+        </label>
+        <br />
+        <label for="isixty">
+          <input
+            type="radio"
+            id="isixty"
+            name="percentage-in-Computer-inter"
+          />60% - 70%
+        </label>
+        <br />
+        <label for="ififty">
+          <input
+            type="radio"
+            id="ififty"
+            name="percentage-in-Computer-inter"
+          />50% - 60%
+        </label>
+        <br />
+        <label for="ifourty">
+          <input
+            type="radio"
+            id="ifourty"
+            name="percentage-in-Computer-inter"
+          />40% - 50%
+        </label>
+        <br />
+
+        <p>3. Marks in Compuer Sciences (Matric)</p>
+        <label for="mninghty">
+          <input
+            type="radio"
+            id="mninghty"
+            name="percentage-in-Computer-matric"
+          />90% or Above
+        </label>
+        <br />
+        <label for="meighty">
+          <input
+            type="radio"
+            id="meighty"
+            name="percentage-in-Computer-matric"
+          />80% - 90%
+        </label>
+        <br />
+        <label for="mseventy">
+          <input
+            type="radio"
+            id="mseventy"
+            name="percentage-in-Computer-matric"
+          />70% - 80%
+        </label>
+        <br />
+        <label for="msixty">
+          <input
+            type="radio"
+            id="msixty"
+            name="percentage-in-Computer-matric"
+          />60% - 70%
+        </label>
+        <br />
+        <label for="mfifty">
+          <input
+            type="radio"
+            id="mfifty"
+            name="percentage-in-Computer-matric"
+          />50% - 60%
+        </label>
+        <br />
+        <label for="mfourty">
+          <input
+            type="radio"
+            id="mfourty"
+            name="percentage-in-Computer-matric"
+          />40% - 50%
+        </label>
+        <br />
+      </fieldset>
+
+
+      <!-- Skills Section -->
+      <fieldset>
+        <legend>Skills</legend>
+        <p>Check your skills with tick mark</p>
+        <label for="g-com">
+            <input type="checkbox" id="g-com" name="skills"> Good Communication 
+        </label>
+        <br>
+        <label for="creative">
+            <input type="checkbox" id="creative" name="skills"> Creative 
+        </label>
+        <br>
+        <label for="b-o-c">
+            <input type="checkbox" id="b-o-c" name="skills"> Basics of Computer 
+        </label>
+        <br>
+        <label for="ph">
+            <input type="checkbox" id="ph" name="skills"> Photography 
+        </label>
+        <br>
+        <label for="others">
+            <input type="checkbox" id="others" name="skills"> Other Skills  
+        </label>
+        <br>
+      </fieldset>
+
+      <!-- Input type submit -->
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
