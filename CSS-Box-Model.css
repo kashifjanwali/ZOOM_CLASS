@@ -1,0 +1,30 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h4 {
+  margin: 0;
+}
+
+#margin {
+  border: 10px solid burlywood;
+  width: 100px;
+  height: 60px;
+  margin: 0;
+}
+
+#border {
+  border: 10px solid lightgoldenrodyellow;
+  height: 40px;
+}
+
+#padding {
+  border: 10px solid rgb(188, 248, 188);
+  height: 20px;
+}
+
+#content {
+  background-color: lightblue;
+  height: 100%;
+  text-align: center;
+}
